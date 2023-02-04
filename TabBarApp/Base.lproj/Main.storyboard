@@ -93,15 +93,29 @@
             </objects>
             <point key="canvasLocation" x="814" y="771"/>
         </scene>
-        <!--View Controller-->
+        <!--Third View Controller-->
         <scene sceneID="xje-po-uRr">
             <objects>
-                <viewController id="EH2-ft-PqM" sceneMemberID="viewController">
+                <viewController id="EH2-ft-PqM" customClass="ThirdViewController" customModule="TabBarApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JUq-m0-vtB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QE4-6e-G8H">
+                                <rect key="frame" x="150" y="306" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                                <connections>
+                                    <segue destination="UUM-Po-GcC" kind="show" id="suz-rj-t0W"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="xyL-vj-e0f"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QE4-6e-G8H" firstAttribute="centerX" secondItem="JUq-m0-vtB" secondAttribute="centerX" id="9Sm-Rc-qna"/>
+                            <constraint firstItem="QE4-6e-G8H" firstAttribute="centerY" secondItem="JUq-m0-vtB" secondAttribute="centerY" id="lll-Q2-G0o"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Uf1-sf-pL5"/>
                 </viewController>
@@ -109,10 +123,26 @@
             </objects>
             <point key="canvasLocation" x="2383" y="770"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--View Controller-->
+        <scene sceneID="GeM-FA-Tkc">
+            <objects>
+                <viewController id="UUM-Po-GcC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DJc-At-lJe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="iDA-Y6-Szr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DZT-k4-SWr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iWL-79-W9e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3092" y="770"/>
+        </scene>
+        <!--Tab Bar View Controller-->
         <scene sceneID="XRT-8W-PzZ">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Lwr-Le-pvD" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Lwr-Le-pvD" customClass="TabBarViewController" customModule="TabBarApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WGE-Tl-lgx">
                         <autoresizingMask key="autoresizingMask"/>
