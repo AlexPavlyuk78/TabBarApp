@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		A505EEB5298D987D008364DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A505EEB4298D987D008364DC /* AppDelegate.swift */; };
 		A505EEB7298D987D008364DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A505EEB6298D987D008364DC /* SceneDelegate.swift */; };
-		A505EEB9298D987D008364DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A505EEB8298D987D008364DC /* ViewController.swift */; };
+		A505EEB9298D987D008364DC /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A505EEB8298D987D008364DC /* StartViewController.swift */; };
 		A505EEBC298D987D008364DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A505EEBA298D987D008364DC /* Main.storyboard */; };
 		A505EEBE298D987D008364DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A505EEBD298D987D008364DC /* Assets.xcassets */; };
 		A505EEC1298D987D008364DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A505EEBF298D987D008364DC /* LaunchScreen.storyboard */; };
+		A505EEC9298DB69B008364DC /* FirstViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A505EEC8298DB69B008364DC /* FirstViewControler.swift */; };
+		A505EECB298DB894008364DC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A505EECA298DB894008364DC /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A505EEB1298D987D008364DC /* TabBarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A505EEB4298D987D008364DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A505EEB6298D987D008364DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A505EEB8298D987D008364DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A505EEB8298D987D008364DC /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		A505EEBB298D987D008364DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A505EEBD298D987D008364DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A505EEC0298D987D008364DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A505EEC2298D987D008364DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A505EEC8298DB69B008364DC /* FirstViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewControler.swift; sourceTree = "<group>"; };
+		A505EECA298DB894008364DC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				A505EEB4298D987D008364DC /* AppDelegate.swift */,
 				A505EEB6298D987D008364DC /* SceneDelegate.swift */,
-				A505EEB8298D987D008364DC /* ViewController.swift */,
+				A505EEB8298D987D008364DC /* StartViewController.swift */,
+				A505EECA298DB894008364DC /* SecondViewController.swift */,
+				A505EEC8298DB69B008364DC /* FirstViewControler.swift */,
 				A505EEBA298D987D008364DC /* Main.storyboard */,
 				A505EEBD298D987D008364DC /* Assets.xcassets */,
 				A505EEBF298D987D008364DC /* LaunchScreen.storyboard */,
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A505EEB9298D987D008364DC /* ViewController.swift in Sources */,
+				A505EEB9298D987D008364DC /* StartViewController.swift in Sources */,
 				A505EEB5298D987D008364DC /* AppDelegate.swift in Sources */,
+				A505EEC9298DB69B008364DC /* FirstViewControler.swift in Sources */,
+				A505EECB298DB894008364DC /* SecondViewController.swift in Sources */,
 				A505EEB7298D987D008364DC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,25 +294,30 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 149;
 				DEVELOPMENT_TEAM = N46262427J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TabBarApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.6.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "com-example.apple-samplecode.TabBarApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -314,25 +327,30 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 149;
 				DEVELOPMENT_TEAM = N46262427J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TabBarApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.6.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "com-example.apple-samplecode.TabBarApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
